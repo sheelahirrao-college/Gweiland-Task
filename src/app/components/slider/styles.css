@@ -1,0 +1,52 @@
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    height: 150px;
+    border-color: #4b5563;
+    width: 100%;
+  }
+  
+.carousel-card {
+    display: flex;
+    padding: 10px 20px 10px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 20px 20px 100px;
+    background: rgb(41, 40, 40);
+}
+
+.carousel-card > img {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.carousel-card > p {
+    padding-left: 20px;
+    color: white;
+}
+
+
+.carousel-track {
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 300%;
+    height: 100%;
+    animation: slide 20s linear infinite;   
+}
+
+@keyframes slide {
+0% {
+    left: 0;
+}
+100% {
+    left: -100%;
+}
+}
